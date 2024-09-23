@@ -1,0 +1,15 @@
+client:
+  topology:
+    local:
+      parallel: 3
+      repeat: 2
+  endpoints:
+  - host: localhost
+    port: 8090
+  suites:
+  - name: testSuite1
+    steps:
+    - path: /hello
+      method: GET
+    - path: /hello
+      method: GET
